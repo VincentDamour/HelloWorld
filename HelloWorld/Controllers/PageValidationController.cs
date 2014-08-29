@@ -20,12 +20,13 @@ namespace HelloWorld.Controllers
         }
 
         [HttpPost]
-        public ActionResult PageValidation(ContactModels Model)
+        public ActionResult PageValidation(PageValidationModels Model)
         {
             ViewBag.Message = "Voici l'exercise de validation.";
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Home/Index");
+                HomeController HCRedirec = new HomeController();
+                return RedirectToAction("Index");
             }
             return View();
         }

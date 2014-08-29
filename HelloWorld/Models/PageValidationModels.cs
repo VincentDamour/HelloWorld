@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HelloWorld.Models
 {
-    public class ContactModels
+    public class PageValidationModels
     {
         [Required]
         public string Nom { get; set; }
