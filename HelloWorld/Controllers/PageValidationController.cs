@@ -26,7 +26,7 @@ namespace HelloWorld.Controllers
             if (ModelState.IsValid)
             {
                 HomeController HCRedirec = new HomeController();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Home");
             }
             return View();
         }
